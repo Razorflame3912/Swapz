@@ -1,17 +1,26 @@
+
+//Mansour Elsharawy
+//APCS1 pd3
+//HW39 -- Put it Together
+//2016-12-04
+
+
 import cs1.Keyboard;
 
 public class Swapper{
     public final String alpha = "qwertyuiopasdfghjklzxcvbnm";
 
+    //instance vars
     public String alphabet;
     public String[][] array = new String[5][5];
 
+    //constructor
     public Swapper(){
 	alphabet = alpha;
 	populate(array);
     }
 
-
+    //prints contents of an array
     public static String matrixPrint(String[][] arr){
 	String retStr = "";
 	for(int y = 0;y < arr.length;y++){
@@ -22,7 +31,8 @@ public class Swapper{
 	}
 	return retStr;
     }    
-    
+
+    //returns a randomized string to have 3 or 4 characters
     public String randomString(){
 	String retStr = "";
 	int numChar = 3;
@@ -44,7 +54,7 @@ public class Swapper{
 	return retStr;
 	    }
 
-    
+    //populates a given array with random strings
     public void populate(String[][] a){
 	for (int y = 0; y < a.length; y++){
 	    for(int x =0; x < a[y].length; x++){
@@ -53,7 +63,8 @@ public class Swapper{
 	    }
 	}
     }
-
+    
+    //swaps two items of an array given the coordinates of each candidate
     public boolean swap(int x1, int y1, int x2, int y2, String[][] a){
 	try{
 	    String savedString = a[x1][y1];
@@ -68,7 +79,7 @@ public class Swapper{
 	}
 
     public static void main(String[] args){
-
+	//Driver code
 	System.out.println("Import completed.\n");
 	Swapper swappy = new Swapper();
 	String[][] systemArray = swappy.array;
