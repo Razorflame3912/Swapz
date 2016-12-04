@@ -62,7 +62,7 @@ public class Swapper{
 	    return false;
 	}
 	catch(Exception e){
-	    System.out.println("Out of bounds. Try again\!n\n");
+	    System.out.println("Invalid Input. Try again\!n\n");
 	    return true;
 	}
 	}
