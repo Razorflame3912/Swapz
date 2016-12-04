@@ -4,6 +4,12 @@
 //HW39 -- Put it Together
 //2016-12-04
 
+/*-----------------------------------------------------------
+SUMMARY OF OPERATIONS:
+1. The main method creates an instance of class Swapper, which upon construction, creates a randomized string Array
+2.
+  -------------------------------------------------------------*/
+
 
 import cs1.Keyboard;
 
@@ -24,6 +30,7 @@ public class Swapper{
     public static String matrixPrint(String[][] arr){
 	String retStr = "";
 	for(int y = 0;y < arr.length;y++){
+	    retStr += y + ": "
 	    for(int x = 0;x < arr[y].length;x++){
 		retStr += arr[y][x] + " ";
 	    }
