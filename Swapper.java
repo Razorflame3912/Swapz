@@ -6,8 +6,9 @@
 
 /*-----------------------------------------------------------
 SUMMARY OF OPERATIONS:
-1. The main method creates an instance of class Swapper, which upon construction, creates a randomized string Array
-2.
+1. The main method creates an instance of class Swapper, which upon construction, creates a randomized string array
+2. The program them asks the user for 4 coordinates, if the user tries to break the code the program asks again until they get it right.
+3. The program performs the swap and then prints out the new array.
   -------------------------------------------------------------*/
 
 
@@ -30,7 +31,7 @@ public class Swapper{
     public static String matrixPrint(String[][] arr){
 	String retStr = "";
 	for(int y = 0;y < arr.length;y++){
-	    retStr += y + ": "
+	    retStr += y + ": ";
 	    for(int x = 0;x < arr[y].length;x++){
 		retStr += arr[y][x] + " ";
 	    }
